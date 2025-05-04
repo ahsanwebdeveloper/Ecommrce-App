@@ -1,0 +1,68 @@
+/* Hide button and sidebar by default */
+.mobile-menu-btn, .mobile-sidebar {
+    display: none;
+  }
+  
+  /* Show button on mobile only */
+  @media screen and (max-width: 480px) {
+    .mobile-menu-btn {
+      font-size: 24px;
+      padding: 1rem;
+      background: none;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      display: block;
+    }
+  
+    .mobile-sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      height: 100%;
+      background: #fff;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: left 0.3s ease-in-out;
+      display: block;
+    }
+  
+    .mobile-sidebar.open {
+      left: 0;
+    }
+  
+    .close-btn {
+      font-size: 24px;
+      background: none;
+      border: none;
+      padding: 1rem;
+      float: right;
+      cursor: pointer;
+      color: #333;
+    }
+  
+    .sidebar-content {
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  
+    .sign-in {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    .sidebar-content ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .sidebar-content li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  

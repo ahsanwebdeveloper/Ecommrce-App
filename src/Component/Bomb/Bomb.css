@@ -1,0 +1,38 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #6b7280;
+    padding: 10px 16px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    border: 1 px solid gray;
+  }
+  
+  .breadcrumb::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .crumb {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+  
+  .separator {
+    margin: 0 6px;
+    color: #9ca3af;
+  }
+  
+  /* Optional: Slightly reduce font on very small screens */
+  @media (max-width: 480px) {
+    .breadcrumb {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  

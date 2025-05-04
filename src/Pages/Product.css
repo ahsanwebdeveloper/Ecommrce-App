@@ -1,0 +1,39 @@
+.productlist{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.Youmakelike{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1vw 2vw 1vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.payment{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+.payment1 img{
+    border-radius: 80%;
+    width: 3vw;
+    height: 4vh;
+}
+.payment1 p{
+    color: gray;
+}
+.filter{
+    width: 80%;
+}
+@media (max-width: 480px){
+    .Youmakelike{
+        flex-wrap: wrap;
+    }
+    .payment{
+        display: none;
+    }
+}

@@ -1,0 +1,139 @@
+.right-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 15vw;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .discounted-price {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .rating {
+    color: #f4c150;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+  }
+  @media (max-width: 480px) {
+    .box-1 {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .card {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      gap: 12px;
+    }
+  
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 6px;
+      margin: 0;
+    }
+  
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  
+    .product-title {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+  
+    .price {
+      margin-bottom: 4px;
+    }
+  
+    .rating {
+      margin-bottom: 4px;
+      font-size: 0.85rem;
+    }
+  
+    .shipping {
+      color: green;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    
+      .card {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    
+      .card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 6px;
+      }
+    
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+    
+      .price, .rating, .product-title, .shipping {
+        margin-bottom: 4px;
+      }
+    
+      .shipping {
+        color: green;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+    }
+    
+    
+  
+  

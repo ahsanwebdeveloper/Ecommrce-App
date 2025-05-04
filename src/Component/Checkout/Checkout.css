@@ -1,0 +1,196 @@
+.cart{
+    width: 65vw;
+    padding: 5vw 3vw 5vw 3vw;
+    
+}
+.cart-container {
+    max-width: 65vw;
+    margin: 0 auto;
+    padding: 1vw 3vw 1vw 3vw;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    border: 1px solid gray;
+
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .cart-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .cart-info {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .cart-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+  
+  .cart-details,
+  .cart-seller {
+    color: #666;
+    font-size: 13px;
+    margin: 2px 0;
+  }
+  
+  .cart-actions {
+    margin-top: 8px;
+  }
+  
+  .remove-btn,
+  .save-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-right: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  
+  .remove-btn {
+    background-color: #fff0f0;
+    color: #d00;
+    border-color: #d00;
+  }
+  
+  .save-btn {
+    background-color: #f0f7ff;
+    color: #007aff;
+    border-color: #007aff;
+  }
+  
+  .cart-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 100px;
+  }
+  
+  .cart-price {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .qty-selector {
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .cart-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  
+  .shop-btn {
+    background-color: #007aff;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .remove-all-btn {
+    background: none;
+    color: #007aff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-summary {
+      align-items: flex-start;
+    }
+  
+    .cart-footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .shop-btn,
+    .remove-all-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart {
+      width: 90vw;
+      padding: 4vw;
+    }
+  
+    .cart-container {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    .cart-item {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .cart-summary {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+  
+    .qty-selector {
+      width: 100px;
+    }
+  
+    .cart-footer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      margin-top: 32px;
+    }
+  
+    .shop-btn,
+    .remove-all-btn {
+      width: 100%;
+    }
+  
+    .cart-title {
+      font-size: 14px;
+    }
+  
+    .cart-details,
+    .cart-seller {
+      font-size: 12px;
+    }
+    .cart-container{
+      border: none;
+    }
+    .qty-selector{
+      border: none;
+    }
+  }
+  

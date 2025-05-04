@@ -1,0 +1,156 @@
+
+.section{
+    width: 100%;
+    height: 30vh;
+    background-color:white;
+    padding: 1vw 3vw 1vw 3vw;
+    
+}
+.sale-section {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .sale-timer {
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .sale-timer .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .sale-timer .subtitle {
+    font-size: 14px;
+    color: #6e6e6e;
+    margin-bottom: 12px;
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .time-box {
+    background: #2e2e2e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .time-box span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .time-box p {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .sale-products {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  .product {
+    text-align: center;
+    border-left: 1px solid #eee;
+    padding: 0 16px;
+  }
+  
+  .product img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  
+  .product-name {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .discount {
+    background: #ffe6e6;
+    color: #ff4d4d;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+  @media (max-width: 480px) {
+    .sale-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 2vw;
+    }
+  
+    .sale-timer {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .countdown {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .time-box {
+      min-width: 60px;
+      margin-bottom: 8px;
+    }
+  
+    .sale-products {
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .product {
+      border-left: none;
+      padding: 0;
+      width: 50%;
+      max-width: 200px;
+    }
+  
+    .product img {
+      width: 50px;
+      height: auto;
+    }
+  
+    .discount {
+      display: inline-block;
+      margin-top: 6px;
+    }
+    .sale-timer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10vw;
+    }
+    .time-box {
+      background: #2e2e2e;
+      color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      min-width: 20px;
+      text-align: center;
+    }
+    #timeid{
+      display: none;
+    }
+    .product-name{
+      color: gray;
+    }
+  }
+  
